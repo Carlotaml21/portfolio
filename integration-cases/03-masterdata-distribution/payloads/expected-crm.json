@@ -1,0 +1,13 @@
+{
+  "partner": {
+    "externalId": "0000010025",
+    "displayName": "Comercial Asturiana SL",
+    "vatNumber": "ESB12345678",
+    "address": {
+      "country": "ES",
+      "city": "Oviedo",
+      "postalCode": "33001"
+    }
+  },
+  "source": "S4HCLNT100"
+}

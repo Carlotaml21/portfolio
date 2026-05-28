@@ -17,16 +17,12 @@ Bilingual (ES / EN), built with **React + Vite**.
 src/
 ├── config.js          ← YOUR data & links (edit me!)
 ├── i18n.js            ← all bilingual copy
-├── data/projects.js   ← integration case studies
 ├── components/        ← Navbar, Hero, About, Experience, Skills,
-│                         Projects, ProjectModal, Education, Contact, Footer
+│                         Education, Contact, Footer
 └── index.css          ← all styles (design tokens at the top)
 
 public/
 └── CV_Carlota_Menendez_Landa.pdf   ← downloadable CV
-
-integration-cases/     ← real SAP Integration Suite artifacts
-                          (Groovy, XSLT, mappings, sample payloads, guides)
 ```
 
 ## Run locally
@@ -44,7 +40,6 @@ Edit **`src/config.js`** and replace the `// TODO` placeholders:
 
 - `linkedin` → your real LinkedIn URL
 - `github` → your real GitHub URL
-- `integrationCasesRepo` → the repo where you push `integration-cases/`
 
 ## Deploy for free
 
@@ -67,10 +62,3 @@ Edit **`src/config.js`** and replace the `// TODO` placeholders:
    ```
 2. Set `base: "/<repo-name>/"` in `vite.config.js`.
 3. `npm run deploy`.
-
-## The integration cases
-
-The `integration-cases/` folder holds hands-on SAP Integration Suite scenarios you can
-build on a free SAP BTP trial. See [`integration-cases/README.md`](./integration-cases/README.md).
-You can keep them in this same repo, or split them into a dedicated repo and point
-`integrationCasesRepo` in `src/config.js` at it.

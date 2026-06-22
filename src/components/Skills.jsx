@@ -1,3 +1,6 @@
+import { certifications } from "../config";
+import { BadgeIcon, ExternalLinkIcon } from "./icons";
+
 export default function Skills({ t }) {
   return (
     <section id="skills" className="section">
@@ -23,12 +26,40 @@ export default function Skills({ t }) {
         <div className="skills__extra">
           <div className="skills__block">
             <h3 className="skill-group__name">{t.skills.certsTitle}</h3>
-            <ul className="skill-group__list">
-              {t.skills.certs.map((c, i) => (
-                <li key={i} className="tag tag--accent">
-                  {c}
-                </li>
-              ))}
+            <ul className="certs">
+              {certifications.map((c) => {
+                const hasLink = Boolean(c.url);
+                const Tag = hasLink ? "a" : "div";
+                const linkProps = hasLink
+                  ? {
+                      href: c.url,
+                      target: "_blank",
+                      rel: "noopener noreferrer",
+                      "aria-label": `${c.name} — ${t.skills.certVerify}`,
+                    }
+                  : {};
+                return (
+                  <li key={c.name}>
+                    <Tag className="cert" {...linkProps}>
+                      <span className="cert__icon" aria-hidden="true">
+                        <BadgeIcon />
+                      </span>
+                      <span className="cert__body">
+                        <span className="cert__name">{c.name}</span>
+                        <span className="cert__meta">
+                          {c.issuer} · {c.year}
+                        </span>
+                      </span>
+                      {hasLink && (
+                        <span className="cert__verify">
+                          {t.skills.certVerify}
+                          <ExternalLinkIcon />
+                        </span>
+                      )}
+                    </Tag>
+                  </li>
+                );
+              })}
             </ul>
           </div>
 

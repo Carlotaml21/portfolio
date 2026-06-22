@@ -102,7 +102,7 @@ export const content = {
         },
       ],
       certsTitle: "Certificaciones",
-      certs: ["SAP BTP Administrator"],
+      certVerify: "Verificar en Credly",
       langsTitle: "Idiomas",
       langs: [
         { name: "Español", level: "Nativo" },
@@ -258,7 +258,7 @@ export const content = {
         },
       ],
       certsTitle: "Certifications",
-      certs: ["SAP BTP Administrator"],
+      certVerify: "Verify on Credly",
       langsTitle: "Languages",
       langs: [
         { name: "Spanish", level: "Native" },

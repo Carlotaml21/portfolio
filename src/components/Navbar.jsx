@@ -6,12 +6,34 @@ const SECTIONS = ["about", "experience", "skills", "education", "contact"];
 export default function Navbar({ t, lang, toggleLang }) {
   const [open, setOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
+  const [active, setActive] = useState("");
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 24);
     onScroll();
     window.addEventListener("scroll", onScroll, { passive: true });
     return () => window.removeEventListener("scroll", onScroll);
+  }, []);
+
+  // Highlight the nav link of the section currently in view.
+  useEffect(() => {
+    const sections = SECTIONS.map((id) => document.getElementById(id)).filter(
+      Boolean
+    );
+    if (sections.length === 0) return;
+
+    const observer = new IntersectionObserver(
+      (entries) => {
+        const visible = entries
+          .filter((e) => e.isIntersecting)
+          .sort((a, b) => b.intersectionRatio - a.intersectionRatio)[0];
+        if (visible) setActive(visible.target.id);
+      },
+      { rootMargin: "-45% 0px -45% 0px", threshold: 0 }
+    );
+
+    sections.forEach((s) => observer.observe(s));
+    return () => observer.disconnect();
   }, []);
 
   const close = () => setOpen(false);
@@ -26,7 +48,13 @@ export default function Navbar({ t, lang, toggleLang }) {
 
         <nav className={`nav__links ${open ? "is-open" : ""}`}>
           {SECTIONS.map((key) => (
-            <a key={key} href={`#${key}`} onClick={close}>
+            <a
+              key={key}
+              href={`#${key}`}
+              onClick={close}
+              className={active === key ? "is-active" : ""}
+              aria-current={active === key ? "true" : undefined}
+            >
               {t.nav[key]}
             </a>
           ))}

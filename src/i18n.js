@@ -18,18 +18,18 @@ export const content = {
       greeting: "Hola, soy",
       role: "SAP Integration Consultant",
       tagline:
-        "De las aulas a la integración SAP. Consultora junior especializada en SAP BTP Integration Suite, construyendo iFlows robustos entre S/4HANA y sistemas externos.",
+        "Consultora SAP Integration junior especializada en SAP BTP Integration Suite y certificada como SAP Integration Developer y BTP Administrator. Diseño y mantengo iFlows robustos entre S/4HANA y sistemas externos.",
       ctaContact: "Contacto",
       ctaCv: "Descargar CV",
     },
 
     about: {
       title: "Sobre mí",
-      lead: "Consultora SAP Integration Junior con experiencia real en SAP BTP Integration Suite.",
+      lead: "Consultora SAP Integration junior en Capgemini, certificada como SAP Integration Developer y SAP BTP Administrator, con experiencia real en SAP BTP Integration Suite.",
       paragraphs: [
         "Mi camino no es el habitual, y eso es justo lo que aporto. Empecé como maestra de Educación Infantil, donde aprendí a explicar lo complejo de forma sencilla, a organizarme bajo presión y a no rendirme hasta que algo funciona. Después di el salto al desarrollo full stack y, de ahí, al mundo SAP.",
         "Hoy trabajo en Capgemini como consultora SAP, diseñando y manteniendo iFlows en Integration Suite: integraciones de S/4HANA con sistemas externos vía REST, SOAP/XML e IDoc, con transformaciones en Groovy, XSLT y message mappings.",
-        "Mi base de desarrollo (React, Java, SQL) me da una ventaja a la hora de entender APIs, depurar payloads y resolver incidencias. Soy autodidacta, meticulosa y me motiva aprender cada día algo nuevo de la plataforma.",
+        "Mi base de desarrollo (React, Java, SQL) me da ventaja a la hora de entender APIs, depurar payloads y resolver incidencias. Estoy certificada como SAP Integration Developer y SAP BTP Administrator, y soy autodidacta, meticulosa y me motiva aprender cada día algo nuevo de la plataforma.",
       ],
       facts: [
         { value: "2", label: "proyectos cliente (Consum, Leprino)" },
@@ -174,18 +174,18 @@ export const content = {
       greeting: "Hi, I'm Carlota",
       role: "SAP Integration Consultant",
       tagline:
-        "From the classroom to SAP integration. Junior consultant specialized in SAP BTP Integration Suite, building robust iFlows between S/4HANA and external systems.",
+        "Junior SAP Integration consultant specialized in SAP BTP Integration Suite and certified as SAP Integration Developer and BTP Administrator. I design and maintain robust iFlows between S/4HANA and external systems.",
       ctaContact: "Contact",
       ctaCv: "Download CV",
     },
 
     about: {
       title: "About me",
-      lead: "Junior SAP Integration Consultant with hands-on experience in SAP BTP Integration Suite.",
+      lead: "Junior SAP Integration consultant at Capgemini, certified as SAP Integration Developer and SAP BTP Administrator, with hands-on experience in SAP BTP Integration Suite.",
       paragraphs: [
         "My path isn't the usual one — and that's exactly what I bring. I started as an Early Childhood teacher, where I learned to explain complex things simply, to stay organized under pressure, and to keep going until something works. Then I moved into full stack development, and from there into the SAP world.",
         "Today I work at Capgemini as an SAP consultant, designing and maintaining iFlows in Integration Suite: S/4HANA integrations with external systems via REST, SOAP/XML and IDoc, with data transformations in Groovy, XSLT and message mappings.",
-        "My development background (React, Java, SQL) gives me an edge when it comes to understanding APIs, debugging payloads and resolving incidents. I'm self-taught, detail-oriented, and driven to learn something new about the platform every day.",
+        "My development background (React, Java, SQL) gives me an edge when it comes to understanding APIs, debugging payloads and resolving incidents. I'm certified as SAP Integration Developer and SAP BTP Administrator, self-taught, detail-oriented, and driven to learn something new about the platform every day.",
       ],
       facts: [
         { value: "2", label: "client projects (Consum, Leprino)" },
